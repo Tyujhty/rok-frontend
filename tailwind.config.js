@@ -7,6 +7,8 @@ export default {
         light: {
           60: "#FCFCFC",
           30: "#0E456C",
+          10: "#58CDA3",
+          hover10: "#398B6E",
         },
       },
     },
