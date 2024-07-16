@@ -9,6 +9,7 @@ export default {
           30: "#131313",
           10: "#58CDA3",
           hover10: "#398B6E",
+          gray10: "#E3E3E3",
         },
       },
     },

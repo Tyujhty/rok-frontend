@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Custom-classes*/
+@layer utilities {
+  .h2-title {
+    @apply text-4xl uppercase text-light-10 font-semibold my-4;
+  }
+}
