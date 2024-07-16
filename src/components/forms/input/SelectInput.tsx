@@ -1,30 +1,34 @@
+import React from "react";
+
 interface SelectInputProps {
   name: string;
   id: string;
   placeholder: string;
   items: string[];
+  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  value: string;
 }
 
 export default function SelectInput(selectInputProps: SelectInputProps) {
-  const { name, id, placeholder, items } = selectInputProps;
+  const { name, id, placeholder, items, onChange, value } = selectInputProps;
+
   return (
     <>
-      <label htmlFor="">
-        <select
-          name={name}
-          id={id}
-          className="w-[250px] h-[30px] rounded-sm outline-none p-1"
-        >
-          <option selected disabled>
-            {placeholder}
+      <label htmlFor={name} hidden></label>
+      <select
+        name={name}
+        id={id}
+        onChange={onChange}
+        value={value}
+        className="w-[250px] h-[30px] rounded-sm outline-none p-1"
+      >
+        <option value="">{placeholder}</option>
+        {items.map((item, index) => (
+          <option key={index} value={item}>
+            {item}
           </option>
-          {items.map((item: string, key: number) => (
-            <option key={key} value={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-      </label>
+        ))}
+      </select>
     </>
   );
 }

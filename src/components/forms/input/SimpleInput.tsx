@@ -1,3 +1,5 @@
+import React from "react";
+
 interface SimpleInputProps {
   type: string;
   name: string;
@@ -5,10 +7,14 @@ interface SimpleInputProps {
   placeholder?: string;
   min?: number;
   max?: number;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value: string | number;
 }
 
-export default function TextInput(simpleInputProps: SimpleInputProps) {
-  const { type, name, id, min, max, placeholder } = simpleInputProps;
+export default function SimpleInput(simpleInputProps: SimpleInputProps) {
+  const { type, name, id, min, max, placeholder, onChange, value } =
+    simpleInputProps;
+
   return (
     <>
       <label htmlFor={name} hidden></label>
@@ -20,6 +26,8 @@ export default function TextInput(simpleInputProps: SimpleInputProps) {
         min={min}
         max={max}
         className="w-[250px] h-[30px] rounded-sm outline-none p-1"
+        onChange={onChange}
+        value={value}
       />
     </>
   );
