@@ -8,6 +8,7 @@ export default {
           60: "#FCFCFC",
           30: "#131313",
           10: "#58CDA3",
+          badge: "#BFBFBF",
           hover10: "#8EDFC2",
           gray10: "#E3E3E3",
           danger: "#CD5858",

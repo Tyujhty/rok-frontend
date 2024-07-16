@@ -1,8 +1,9 @@
-import CategoryBadge from "../../components/Badges/CategoryBadge";
+import GenericBadge from "../../components/Badges/GenericBadge";
 import ThumbDownButton from "../../components/Buttons/ThumbsDownButton";
 import ThumbUpButton from "../../components/Buttons/ThumbsUpButton";
 import CardBody from "../../components/Card/CardBody";
 
+//TODO: Remove
 const categoriesFaker = ["JavaScript", "Python", "Java", "C#"];
 
 export default function AnswerPage() {
@@ -11,7 +12,7 @@ export default function AnswerPage() {
       <div className="flex flex-col items-center mt-8">
         <h2 className="h2-title">Réponse 1/10</h2>
         <CardBody>
-          <CategoryBadge itemName={categoriesFaker[0]} />
+          <GenericBadge itemName={categoriesFaker[0]} />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
             blanditiis neque laudantium provident soluta sequi sed iusto. Cumque
