@@ -1,11 +1,11 @@
-import BlueCard from "../../components/Card/BlueCard";
+import CardBody from "../../components/Card/CardBody";
 import SelectionTrainingForm from "../../components/forms/SelectionTrainingForm";
 
 export default function HomePage() {
   return (
     <>
       <div className="w-full flex justify-center mt-8">
-        <BlueCard>
+        <CardBody>
           <h2>Lorem</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
@@ -14,7 +14,7 @@ export default function HomePage() {
             doloribus, voluptatum minima error.
           </p>
           <SelectionTrainingForm />
-        </BlueCard>
+        </CardBody>
       </div>
     </>
   );

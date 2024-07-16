@@ -20,7 +20,7 @@ export default function SelectInput(selectInputProps: SelectInputProps) {
         id={id}
         onChange={onChange}
         value={value}
-        className="w-[250px] h-[30px] rounded-sm outline-none p-1"
+        className="w-[250px] h-[30px] rounded-sm outline-none p-1 border-light-30 border-solid border"
       >
         <option value="">{placeholder}</option>
         {items.map((item, index) => (
