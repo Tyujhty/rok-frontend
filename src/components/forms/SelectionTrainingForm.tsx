@@ -40,7 +40,7 @@ export default function SelectionTrainingForm() {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="flex flex-col items-center gap-4 mt-10"
+      className="flex flex-col items-center gap-4 mt-10 w-full"
     >
       <SimpleInput
         type="text"

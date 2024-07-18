@@ -25,7 +25,7 @@ export default function SimpleInput(simpleInputProps: SimpleInputProps) {
         placeholder={placeholder}
         min={min}
         max={max}
-        className="w-[250px] h-[30px] rounded-sm outline-none p-1 border-light-30 border-solid border"
+        className="w-[70%] h-[30px] rounded-sm outline-none p-1 bg-light-gray20"
         onChange={onChange}
         value={value}
       />

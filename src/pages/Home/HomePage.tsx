@@ -4,7 +4,7 @@ import SelectionTrainingForm from "../../components/forms/SelectionTrainingForm"
 export default function HomePage() {
   return (
     <>
-      <div className="w-full flex justify-center mt-8">
+      <div className="w-full flex justify-center items-center mt-8">
         <CardBody>
           <h2>Lorem</h2>
           <p>
