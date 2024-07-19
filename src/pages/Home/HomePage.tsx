@@ -7,8 +7,12 @@ export default function HomePage() {
       <div className="w-full flex justify-center items-center mt-8">
         <CardBody>
           <h2>Lorem</h2>
-          <p>test docker image update !</p>
-          <p>test docker image update !</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+            praesentium ut. Perferendis iure, iste nam tempore et illo nihil
+            quaerat debitis. Molestias mollitia enim distinctio dignissimos
+            doloribus, voluptatum minima error.
+          </p>
           <SelectionTrainingForm />
         </CardBody>
       </div>
