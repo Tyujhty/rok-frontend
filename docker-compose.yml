@@ -1,5 +1,5 @@
 services:
   front:
-    image: ghcr.io/tyujhty/ready_or_know:devops
+    image: ghcr.io/tyujhty/ready_or_know:latest
     ports:
       - 3214:80
