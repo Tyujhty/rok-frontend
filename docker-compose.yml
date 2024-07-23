@@ -1,5 +1,5 @@
 services:
   front:
-    image: ghcr.io/tyujhty/rok-frontend:latest
+    image: ghcr.io/tyujhty/rok-frontend:develop
     ports:
       - 3214:80
