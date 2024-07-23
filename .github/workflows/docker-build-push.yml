@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/tyujhty/ready_or_know:latest
+          tags: ghcr.io/tyujhty/rok-frontend:latest
