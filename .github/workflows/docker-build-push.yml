@@ -27,5 +27,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          file: Dockerfile.production
           push: true
           tags: ghcr.io/tyujhty/rok-frontend:devops
